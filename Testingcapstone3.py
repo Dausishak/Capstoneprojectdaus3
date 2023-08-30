@@ -10,13 +10,13 @@ import openpyxl
 # Load data from the Excel file
 @st.cache
 def load_data():
-    data = pd.read_excel("D:/Profesional Certificate in Data Science UTM/Bismillah Capstone Project/Copy of combined_data.xlsx")
+    data = pd.read_excel("Copy of combined_data.xlsx")
     return data
 
 data = load_data()
 
 from PIL import Image
-image = Image.open("D:/Profesional Certificate in Data Science UTM/Bismillah Capstone Project/ExamP.jpg")
+image = Image.open("ExamP.jpg")
 
 st.image(image, caption='Exam Perfromance',width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
